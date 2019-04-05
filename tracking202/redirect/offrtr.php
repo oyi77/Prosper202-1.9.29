@@ -12,8 +12,8 @@ if(!isset($_COOKIE['tracking202subid']) || !is_numeric($_COOKIE['tracking202subi
     die();
 } 
 
-include_once (substr(dirname( __FILE__ ), 0,-21) . '/202-config/connect2.php');
-include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/class-dataengine-slim.php');
+include_once (substr(dirname( __FILE__ ), 0,-21) . '/config/connect2.php');
+include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/class-dataengine-slim.php');
 
 $mysql['click_id'] = $db->real_escape_string($_COOKIE['tracking202subid']);
 $mysql['rpi'] = $db->real_escape_string($_GET['rpi']);

@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-18) . '/202-config/connect.php'); 
+<?php include_once(substr(dirname( __FILE__ ), 0,-18) . '/config/connect.php'); 
 
 AUTH::require_user();
 
@@ -71,7 +71,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 	        <div id="tracker_aff_network" class="form-group" style="margin-bottom: 0px;">
 		        <label for="aff_network_id" class="col-xs-4 control-label" style="text-align: left;">Category:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="aff_network_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>202-img/loader-small.gif"/>
+		        	<img id="aff_network_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
 	                <div id="aff_network_id_div"></div>
 		        </div>
 		    </div>
@@ -79,7 +79,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 		    <div id="tracker_aff_campaign" class="form-group" style="margin-bottom: 0px;">
 		        <label for="aff_campaign_id" class="col-xs-4 control-label" style="text-align: left;">Campaign:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="aff_campaign_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display: none;"/>
+		        	<img id="aff_campaign_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display: none;"/>
 			        <div id="aff_campaign_id_div">
 			            <select class="form-control input-sm" id="aff_campaign_id" disabled="">
 			                <option>--</option>
@@ -91,7 +91,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 		    <div id="tracker_method_of_promotion" class="form-group" style="margin-bottom: 0px;">
 		        <label for="method_of_promotion" class="col-xs-4 control-label" style="text-align: left;">Method of Promotion:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="method_of_promotion_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>202-img/loader-small.gif"/>
+		        	<img id="method_of_promotion_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
 					<div id="method_of_promotion_div">
 						<select class="form-control input-sm" id="method_of_promotion" disabled="">
 			                <option>--</option>
@@ -103,7 +103,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 		    <div id="tracker_lp" class="form-group" style="margin-bottom: 0px;">
 		        <label for="landing_page_id" class="col-xs-4 control-label" style="text-align: left;">Landing Page:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="landing_page_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>202-img/loader-small.gif"/>
+		        	<img id="landing_page_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
 					<div id="landing_page_div">
 						<select class="form-control input-sm" id="landing_page_id" disabled="">
 			                <option>--</option>
@@ -115,7 +115,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 		    <div id="tracker_ad_copy" class="form-group" style="margin-bottom: 0px;">
 		        <label for="text_ad_id" class="col-xs-4 control-label" style="text-align: left;">Ad Copy:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="text_ad_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>202-img/loader-small.gif"/>
+		        	<img id="text_ad_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
 					<div id="text_ad_id_div">
 						<select class="form-control input-sm" id="text_ad_id" disabled="">
 			                <option>--</option>
@@ -127,7 +127,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 		    <div id="tracker_ad_preview" class="form-group" style="margin-bottom: 0px;">
 		        <label class="col-xs-4 control-label" style="text-align: left;">Ad Preview </label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="ad_preview_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>202-img/loader-small.gif"/>
+		        	<img id="ad_preview_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
 					<div id="ad_preview_div">
 						<div class="panel panel-default" style="opacity:0.5; border-color: #3498db; margin-bottom:0px">
 							<div class="panel-body">
@@ -154,7 +154,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 		    <div id="tracker_rotator" class="form-group" style="display:none; margin-bottom: 0px;">
 		        <label for="tracker_rotator" class="col-xs-4 control-label" style="text-align: left;">Rotator:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-			        <img id="rotator_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>202-img/loader-small.gif"/>
+			        <img id="rotator_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
 					<div id="rotator_id_div"></div>
 		        </div>
 		    </div>
@@ -162,7 +162,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 		    <div class="form-group" style="margin-bottom: 0px;">
 		        <label for="ppc_network_id" class="col-xs-4 control-label" style="text-align: left;">Traffic Source:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="ppc_network_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>202-img/loader-small.gif"/>
+		        	<img id="ppc_network_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
 					<div id="ppc_network_id_div"></div>
 		        </div>
 		    </div>
@@ -170,7 +170,7 @@ template_top('Get Trackers',NULL,NULL,NULL);  ?>
 		    <div class="form-group" style="margin-bottom: 0px;">
 		        <label for="ppc_account_id" class="col-xs-4 control-label" style="text-align: left;">Traffic Source Account:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="ppc_account_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>202-img/loader-small.gif"/>
+		        	<img id="ppc_account_id_div_loading" class="loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
 					<div id="ppc_account_id_div">
 						<select class="form-control input-sm" id="ppc_account_id" disabled="">
 			                <option>--</option>

@@ -1,6 +1,6 @@
 <?php
-include_once($_SERVER['DOCUMENT_ROOT'] . '/202-config.php'); 
-include_once($_SERVER['DOCUMENT_ROOT'] . '/202-config/connect2.php');
+include_once($_SERVER['DOCUMENT_ROOT'] . '/config.php'); 
+include_once($_SERVER['DOCUMENT_ROOT'] . '/config/connect2.php');
 include_once($_SERVER['DOCUMENT_ROOT'] . '/api/v2/functions.php');
 
 header('Content-Type: application/json');

@@ -7,7 +7,7 @@ header("Pragma: no-cache");
 header('P3P: CP="Prosper202 does not have a P3P policy"');
 echo base64_decode("R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/connect2.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/connect2.php'); 
 
 $t202id = $_GET['t202id'];
 if (!is_numeric($t202id)) die();

@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-17) . '/202-config/connect.php'); 
+<?php include_once(substr(dirname( __FILE__ ), 0,-17) . '/config/connect.php'); 
 
 AUTH::require_user();
 
@@ -756,7 +756,7 @@ if (isset($_POST['add_more_rules']) && $_POST['add_more_rules'] == true) { ?>
 					</div>		
 				<div class="col-xs-2" style="margin-left: -18px; margin-top: 10px;">
 					<div class="form-group">
-						<img id="addmore_criteria_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
+						<img id="addmore_criteria_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
 						<button id="add_more_criteria" class="btn btn-xs btn-default"><span class="fui-plus"></span> Add more criteria</button>
 					</div>
 				</div>
@@ -861,7 +861,7 @@ if (isset($_POST['add_more_rules']) && $_POST['add_more_rules'] == true) { ?>
 
 						<div class="col-xs-2">
 							<div class="form-group" style="  margin-left: 5px; margin-top: 8px;">
-								<img id="addmore_redirects_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
+								<img id="addmore_redirects_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
 								<button id="add_more_redirects" class="btn btn-xs btn-default"><span class="fui-plus"></span> Add more redirects</button>
 							</div>
 						</div>
@@ -1024,7 +1024,7 @@ if (isset($_POST['generate_rules']) && $_POST['generate_rules'] == true && isset
 									</div>	
 								<div class="col-xs-2" style="margin-left: -18px; margin-top: 10px;">
 									<div class="form-group">
-										<img id="addmore_criteria_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
+										<img id="addmore_criteria_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
 										<button id="add_more_criteria" class="btn btn-xs btn-default"><span class="fui-plus"></span> Add more criteria</button>
 									</div>
 								</div>
@@ -1129,7 +1129,7 @@ if (isset($_POST['generate_rules']) && $_POST['generate_rules'] == true && isset
 
 											<div class="col-xs-2">
 												<div class="form-group" style="  margin-left: 5px; margin-top: 8px;">
-													<img id="addmore_redirects_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
+													<img id="addmore_redirects_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
 													<button id="add_more_redirects" class="btn btn-xs btn-default"><span class="fui-plus"></span> Add more redirects</button>
 												</div>
 											</div>
@@ -1298,7 +1298,7 @@ if (isset($_POST['generate_rules']) && $_POST['generate_rules'] == true && isset
 									</div>	
 								<div class="col-xs-2" style="margin-left: -18px; margin-top: 10px;">
 									<div class="form-group">
-										<img id="addmore_criteria_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
+										<img id="addmore_criteria_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
 										<button id="add_more_criteria" class="btn btn-xs btn-default"><span class="fui-plus"></span> Add more criteria</button>
 									</div>
 								</div>
@@ -1442,7 +1442,7 @@ if (isset($_POST['generate_rules']) && $_POST['generate_rules'] == true && isset
 									<?php if($redirect_counter == 1) { ?>
 										<div class="col-xs-2">
 											<div class="form-group" style="  margin-left: 5px; margin-top: 8px;">
-												<img id="addmore_redirects_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
+												<img id="addmore_redirects_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
 												<button id="add_more_redirects" class="btn btn-xs btn-default"><span class="fui-plus"></span> Add more redirects</button>
 											</div>
 										</div>
@@ -1501,7 +1501,7 @@ if (isset($_POST['generate_rules']) && $_POST['generate_rules'] == true && isset
 
 									<div class="col-xs-2">
 										<div class="form-group" style="  margin-left: 5px; margin-top: 8px;">
-											<img id="addmore_redirects_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
+											<img id="addmore_redirects_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
 											<button id="add_more_redirects" class="btn btn-xs btn-default"><span class="fui-plus"></span> Add more redirects</button>
 										</div>
 									</div>

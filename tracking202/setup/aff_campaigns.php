@@ -1,5 +1,5 @@
 <?php
-include_once (substr(dirname( __FILE__ ), 0,-18) . '/202-config/connect.php');
+include_once (substr(dirname( __FILE__ ), 0,-18) . '/config/connect.php');
 
 AUTH::require_user ();
 
@@ -510,7 +510,7 @@ template_top ( 'Affiliate Campaigns Setup', NULL, NULL, NULL );
 						
 						if ($aff_network_row['dni_network_id'] != null) {
 							if ($aff_network_row['processed'] == false) { 
-								$dni_is_live = "<span style='font-size:10px'>processing... <img src='".get_absolute_url()."202-img/loader-small.gif'></span>";
+								$dni_is_live = "<span style='font-size:10px'>processing... <img src='".get_absolute_url()."img/loader-small.gif'></span>";
 							} else {
 								$dni_is_live = '<a href="#" class="openDniSearchOffersModal" data-dni-id="'.$aff_network_row['dni_network_id'].'">Search Offers</a>';
 								 
@@ -558,7 +558,7 @@ template_top ( 'Affiliate Campaigns Setup', NULL, NULL, NULL );
 					arsort($dniNetworks);
 					foreach ($dniNetworks as $dninetwork) {
 					    if($dninetwork['networkId']!='skip')
-					        echo "<li><img src='".$dninetwork['favIconUrl']."' width=16>&nbsp;&nbsp;<strong>".$dninetwork['name']." (DNI)</strong> - <a href=".get_absolute_url()."202-account/api-integrations.php?add_dni_network=".$dninetwork['networkId'].">Activate</a></li>";
+					        echo "<li><img src='".$dninetwork['favIconUrl']."' width=16>&nbsp;&nbsp;<strong>".$dninetwork['name']." (DNI)</strong> - <a href=".get_absolute_url()."account/api-integrations.php?add_dni_network=".$dninetwork['networkId'].">Activate</a></li>";
 					}
 					?>
 				</ul>
@@ -571,7 +571,7 @@ template_top ( 'Affiliate Campaigns Setup', NULL, NULL, NULL );
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-      	<h4 class="modal-title"><span id="inProgress" style="display:none"> Processing... <img src="<?php echo get_absolute_url();?>202-img/loader-small.gif"></span></h4>
+      	<h4 class="modal-title"><span id="inProgress" style="display:none"> Processing... <img src="<?php echo get_absolute_url();?>img/loader-small.gif"></span></h4>
       </div>
       <div class="modal-body">
       	<table id="stats-table" class="tablesorter">
@@ -612,7 +612,7 @@ template_top ( 'Affiliate Campaigns Setup', NULL, NULL, NULL );
 		</table>
       </div>
       <div class="modal-footer">
-        <span id="inProgressFooter" style="display:none"> Processing... <img src="<?php echo get_absolute_url();?>202-img/loader-small.gif"></span>
+        <span id="inProgressFooter" style="display:none"> Processing... <img src="<?php echo get_absolute_url();?>img/loader-small.gif"></span>
       </div>
     </div>
   </div>
@@ -646,6 +646,6 @@ $(document).ready(function() {
 	var campaignList = new List('campaignList', campaignOptions);
 });
 </script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>202-js/jquery.caret.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>js/jquery.caret.js"></script>
 
 <?php template_bottom(); ?>			

@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-18) . '/202-config/connect.php');
+<?php include_once(substr(dirname( __FILE__ ), 0,-18) . '/config/connect.php');
 
 AUTH::require_user();
 
@@ -207,7 +207,7 @@ template_top('Smart Redirector',NULL,NULL,NULL); ?>
 <div class="row" style="margin-top:15px;">
 			<div class="col-xs-4">
 				<div class="form-group">
-					<img id="rules_loading" class="loading" src="/202-img/loader-small.gif" style="display:none;right: -20px;top: 10px;"/>
+					<img id="rules_loading" class="loading" src="/img/loader-small.gif" style="display:none;right: -20px;top: 10px;"/>
 					<label for="rotator_id" style="margin-right:5px;">Select redirector: </label>
 					<select class="form-control input-sm" name="rotator_id" style="min-width: 130px;">
 						<option value="0">--</option>
@@ -312,7 +312,7 @@ template_top('Smart Redirector',NULL,NULL,NULL); ?>
 
 					<div class="col-xs-2" style="margin-left: -18px; margin-top: 10px;">
 						<div class="form-group">
-							<img id="addmore_criteria_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
+							<img id="addmore_criteria_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display:none; position: absolute; top: 4px; left: -20px;">
 							<button id="add_more_criteria" class="btn btn-xs btn-default" disabled><span class="fui-plus"></span> Add more criteria</button>
 						</div>
 					</div>
@@ -353,7 +353,7 @@ template_top('Smart Redirector',NULL,NULL,NULL); ?>
 		<span class="infotext">*If you want to split-test all visitors, select at least one criteria and type: <i><b>ALL</b></i> as value and hit <i><b>Enter</b></i>.</span>
 	</div>
 	<div class="col-xs-5 text-right" style="margin-top:15px;">
-		<img id="addmore_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display: none; position: static;">
+		<img id="addmore_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display: none; position: static;">
 		<button id="add_more_rules" class="btn btn-xs btn-default" disabled><span class="fui-plus"></span> Add more rules</button>
 		<button class="btn btn-xs btn-p202" id="post_rules" disabled>Save rules</button>
 	</div>

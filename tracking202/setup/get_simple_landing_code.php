@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-18) . '/202-config/connect.php'); 
+<?php include_once(substr(dirname( __FILE__ ), 0,-18) . '/config/connect.php'); 
 
 AUTH::require_user();
 
@@ -28,7 +28,7 @@ template_top($server_row,'Get Simple Landing Page Code',NULL,NULL,NULL);  ?>
 			<div class="form-group" style="margin-bottom: 0px;">
 			    <label for="aff_campaign_id" class="col-xs-5 control-label" style="text-align: left;">Category:</label>
 			    <div class="col-xs-6">
-			        <img id="aff_network_id_div_loading" class="loading" src="/202-img/loader-small.gif"/>
+			        <img id="aff_network_id_div_loading" class="loading" src="/img/loader-small.gif"/>
 	                <div id="aff_network_id_div"></div>
 			    </div>
 			</div>
@@ -36,7 +36,7 @@ template_top($server_row,'Get Simple Landing Page Code',NULL,NULL,NULL);  ?>
 			<div class="form-group" style="margin-bottom: 0px;">
 			<label for="aff_campaign_id" class="col-xs-5 control-label" style="text-align: left;">Campaign:</label>
 				<div class="col-xs-6" style="margin-top: 10px;">
-				    <img id="aff_campaign_id_div_loading" class="loading" src="/202-img/loader-small.gif" style="display: none;"/>
+				    <img id="aff_campaign_id_div_loading" class="loading" src="/img/loader-small.gif" style="display: none;"/>
 			        <div id="aff_campaign_id_div">
 			            <select class="form-control input-sm" id="aff_campaign_id" disabled="">
 			                <option>--</option>
@@ -57,7 +57,7 @@ template_top($server_row,'Get Simple Landing Page Code',NULL,NULL,NULL);  ?>
 			<div class="form-group" style="margin-bottom: 0px;">
 		        <label for="landing_page_id" class="col-xs-5 control-label" style="text-align: left;">Landing Page:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="landing_page_div_loading" class="loading" style="display: none;" src="/202-img/loader-small.gif"/>
+		        	<img id="landing_page_div_loading" class="loading" style="display: none;" src="/img/loader-small.gif"/>
 					<div id="landing_page_div">
 						<select class="form-control input-sm" id="landing_page_id" disabled="">
 			                <option>--</option>

@@ -1,5 +1,5 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/connect2.php'); 
-include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/class-dataengine-slim.php');
+<?php include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/connect2.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/class-dataengine-slim.php');
 
 //run script   
 $mysql['landing_page_id_public'] = $db->real_escape_string($_GET['lpip']);

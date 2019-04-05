@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-30) . '/202-config/connect.php'); 
+<?php include_once(substr(dirname( __FILE__ ), 0,-30) . '/config/connect.php'); 
 	
 //make sure user is logged in or die
 	AUTH::require_user();

@@ -19,8 +19,8 @@ elseif (isset($_COOKIE['tracking202pci']))
 
 if (! is_numeric($acip))
     die();
-include_once (substr(dirname( __FILE__ ), 0,-21) . '/202-config/connect2.php');
-include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/class-dataengine-slim.php');
+include_once (substr(dirname( __FILE__ ), 0,-21) . '/config/connect2.php');
+include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/class-dataengine-slim.php');
 
 if(isset($_COOKIE['tracking202subid'])) { //if there's a cookie use it
     $click_id = $_COOKIE['tracking202subid'];

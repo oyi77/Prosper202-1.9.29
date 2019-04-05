@@ -1,6 +1,6 @@
 <?php header('Content-type: application/javascript');
 header('P3P: CP="Prosper202 does not have a P3P policy"');
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/connect2.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/connect2.php'); 
  
 //lets find out if this is an advance or simple landing page, so we can include the appropriate script for each
 $landing_page_id_public = $_GET['lpip'];

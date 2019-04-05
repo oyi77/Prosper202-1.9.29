@@ -1,7 +1,7 @@
 <?php
 
-include_once(substr(dirname( __FILE__ ), 0,-17) . '/202-config/connect.php'); 
-include_once(substr(dirname( __FILE__ ), 0,-17) . '/202-config/ReportSummaryForm.class.php');
+include_once(substr(dirname( __FILE__ ), 0,-17) . '/config/connect.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-17) . '/config/ReportSummaryForm.class.php');
 AUTH::require_user();
 	
 //set the timezone for this user.
@@ -45,7 +45,7 @@ AUTH::set_timezone($_SESSION['user_timezone']);
 		<small>The group overview screen gives you a quick glance at all of your traffic across all dimensions.</small>
 	</div>
 	<div class="col-xs-4 text-right" style="margin-top:15px;">
-		<img style="margin-bottom:2px;" src="<?php echo get_absolute_url();?>202-img/icons/16x16/page_white_excel.png"/>
+		<img style="margin-bottom:2px;" src="<?php echo get_absolute_url();?>img/icons/16x16/page_white_excel.png"/>
 		<a style="font-size:12px;" target="_new" href="<?php echo get_absolute_url();?>tracking202/overview/group_overview_download.php">
 			<strong>Download to excel</strong>
 		</a>

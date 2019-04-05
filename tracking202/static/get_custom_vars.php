@@ -1,7 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/connect2.php');
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/connect2.php');
 $data = array();
 $tracker_id_public = $db->real_escape_string($_GET['t202id']); 
 $sql = "SELECT 

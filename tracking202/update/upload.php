@@ -1,6 +1,6 @@
 <?php
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/connect.php'); 
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/class-dataengine-slim.php');
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/connect.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/class-dataengine-slim.php');
 
 AUTH::require_user();
 
@@ -250,7 +250,7 @@ switch ($_GET['case']) {
 				</form>
 			</div>
 		</div>
-		<script src="/202-js/flatui-fileinput.js"></script>
+		<script src="/js/flatui-fileinput.js"></script>
 		<?php template_bottom();
 		break;
 }

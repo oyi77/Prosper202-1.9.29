@@ -1,5 +1,5 @@
 <?php
-include_once (substr(dirname( __FILE__ ), 0,-18) . '/202-config/connect.php');
+include_once (substr(dirname( __FILE__ ), 0,-18) . '/config/connect.php');
 
 AUTH::require_user ();
 
@@ -203,7 +203,7 @@ template_top ( 'Campaign Category Setup', NULL, NULL, NULL );
 						$html ['network_logo'] = '';
 				
 						if(!empty($aff_network_row ['dni_network_id']))
-						    $html ['network_logo']= '<img src="/202-img/favicon.gif" width=16>&nbsp;&nbsp;'; //replace with actual logo from db
+						    $html ['network_logo']= '<img src="/img/favicon.gif" width=16>&nbsp;&nbsp;'; //replace with actual logo from db
 						    
 						if ($userObj->hasPermission("remove_campaign_category")) {
 							printf ( '<li>%s <span class="filter_network_name">%s</span> - <a href="?edit_aff_network_id=%s">edit</a> - <a href="?delete_aff_network_id=%s&delete_aff_network_name=%s" onclick="return confirmSubmit(\'Are You Sure You Want To Delete This Campaign Category?\');">remove</a></li>', $html ['network_logo'], $html ['aff_network_name'], $html ['aff_network_id'], $html ['aff_network_id'],$html ['aff_network_name'] );

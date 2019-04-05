@@ -1,8 +1,8 @@
 <?php
 header('P3P: CP="Prosper202 does not have a P3P policy"');
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/connect2.php');
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/class-snoopy.php');
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/class-dataengine-slim.php');
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/connect2.php');
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/class-snoopy.php');
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/class-dataengine-slim.php');
 
 //get the aff_camapaign_id
 $mysql['user_id'] = 1;
@@ -216,7 +216,7 @@ if($mysql['ppc_account_id']){
 					break;
 				case 4:
 					$snoopy = new Snoopy;
-					$snoopy->agent="Mozilla/5.0 Postback202-Bot v1.8";
+					$snoopy->agent="Mozilla/5.0 PostbackBot v1.8";
 					
 		        	foreach($pixel_urls as $pixel_url){
 					  if(isset($pixel_url))

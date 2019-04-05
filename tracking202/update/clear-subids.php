@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/connect.php'); 
+<?php include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/connect.php'); 
 
 AUTH::require_user();
 
@@ -26,7 +26,7 @@ template_top('Clear Subids',NULL,NULL,NULL);  ?>
 			<div id="tracker_aff_network" class="form-group" style="margin-bottom: 0px;">
 		        <label for="aff_network_id" class="col-xs-4 control-label" style="text-align: left;">Affiliate Network:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="aff_network_id_div_loading" class="loading" style="display: none;" src="/202-img/loader-small.gif"/>
+		        	<img id="aff_network_id_div_loading" class="loading" style="display: none;" src="/img/loader-small.gif"/>
 	                <div id="aff_network_id_div"></div>
 		        </div>
 		    </div>
@@ -34,7 +34,7 @@ template_top('Clear Subids',NULL,NULL,NULL);  ?>
 			<div id="tracker_aff_campaign" class="form-group" style="margin-bottom: 0px;">
 		        <label for="aff_campaign_id" class="col-xs-4 control-label" style="text-align: left;">Affiliate Campaign:</label>
 		        <div class="col-xs-6" style="margin-top: 10px;">
-		        	<img id="aff_campaign_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>202-img/loader-small.gif" style="display: none;"/>
+		        	<img id="aff_campaign_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display: none;"/>
 			        <div id="aff_campaign_id_div">
 			            <select class="form-control input-sm" id="aff_campaign_id" disabled="">
 			                <option>--</option>

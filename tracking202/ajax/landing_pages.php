@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-17) . '/202-config/connect.php'); 
+<?php include_once(substr(dirname( __FILE__ ), 0,-17) . '/config/connect.php'); 
 
 AUTH::require_user();
 if (($_POST['type'] != 'landingpage' and $_POST['type'] != 'landingpages' ) and  ($_POST['type'] != 'advlandingpage')) { ?>

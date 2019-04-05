@@ -4,8 +4,8 @@ $t202id = $_GET['t202id'];
 if (!is_numeric($t202id)) die();
 
 # check to see if mysql connection works, if not fail over to cached stored redirect urls
-include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/connect2.php'); 
-include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/class-dataengine-slim.php');
+include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/connect2.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/class-dataengine-slim.php');
 
 $usedCachedRedirect = false;
 if (!$db) $usedCachedRedirect = true;

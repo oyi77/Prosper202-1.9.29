@@ -6,7 +6,7 @@ $tracker_id = $_GET['t202id'];
 if (!is_numeric($tracker_id)) die();
 
 # check to see if mysql connection works, if not fail over to cached stored redirect urls
-include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-21) . '/config.php'); 
 
 $usedCachedRedirect = false;
 if (!$db) $usedCachedRedirect = true;
@@ -26,8 +26,8 @@ if ($usedCachedRedirect==true) {
 	die("<h2>Error establishing a database connection - please contact the webhost</h2>");
 }
 
-include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/connect2.php');
-include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/class-dataengine-slim.php');
+include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/connect2.php');
+include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/class-dataengine-slim.php');
 
 //grab tracker data
 $mysql['tracker_id_public'] = $db->real_escape_string($tracker_id);

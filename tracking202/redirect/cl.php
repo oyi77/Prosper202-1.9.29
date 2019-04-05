@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-21) . '/202-config/connect2.php'); 
+<?php include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/connect2.php'); 
 
 //run script   
 $mysql['click_id_public'] = $db->real_escape_string($_GET['pci']);
@@ -25,8 +25,8 @@ $tracker_row = memcache_mysql_fetch_assoc($db, $tracker_sql);
 $referrer = $tracker_row['user_pref_cloak_referer'];
 
 if (!$tracker_row) {
-	$action_site_url = "/202-404.php";
-	$redirect_site_url = "/202-404.php";
+	$action_site_url = "/404.php";
+	$redirect_site_url = "/404.php";
 } else {
 	$action_site_url = "/tracking202/redirect/cl2.php";
 	//modify the redirect site url to go through another cloaked link

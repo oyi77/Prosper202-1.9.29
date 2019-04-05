@@ -1,6 +1,6 @@
 <?php 
-include_once(substr(dirname( __FILE__ ), 0,-17) . '/202-config/connect.php'); 
-include_once(substr(dirname( __FILE__ ), 0,-17) . '/202-config/class-dataengine.php');
+include_once(substr(dirname( __FILE__ ), 0,-17) . '/config/connect.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-17) . '/config/class-dataengine.php');
 AUTH::require_user();
 	
 //set the timezone for this user.

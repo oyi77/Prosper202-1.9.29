@@ -7,8 +7,8 @@ header("Content-Disposition: attachment; filename=T202_text_ads_".time().".xls")
 header("Pragma: no-cache");
 header("Expires: -1");
 
-include_once(substr(dirname( __FILE__ ), 0,-20) . '/202-config/connect.php');
-include_once(substr(dirname( __FILE__ ), 0,-20) . '/202-config/class-dataengine.php'); 
+include_once(substr(dirname( __FILE__ ), 0,-20) . '/config/connect.php');
+include_once(substr(dirname( __FILE__ ), 0,-20) . '/config/class-dataengine.php'); 
 
 AUTH::require_user();
 

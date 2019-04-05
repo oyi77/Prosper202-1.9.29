@@ -1,4 +1,4 @@
-<?php include_once(substr(dirname( __FILE__ ), 0,-18) . '/202-config/connect.php');
+<?php include_once(substr(dirname( __FILE__ ), 0,-18) . '/config/connect.php');
 
 AUTH::require_user();
 
@@ -113,14 +113,14 @@ $unSecuredUniversalPixelJS = '
 				<div class="form-group" style="margin-bottom: 0px;">
 			        <label for="aff_network_id" class="col-xs-2 control-label" style="text-align: left;">Category:</label>
 			        <div class="col-xs-4" style="margin-top: 10px;">
-			        	<img id="aff_network_id_div_loading" src="/202-img/loader-small.gif" />
+			        	<img id="aff_network_id_div_loading" src="/img/loader-small.gif" />
 						<div id="aff_network_id_div"></div>
 			        </div>
 			    </div>
 			    <div class="form-group" style="margin-bottom: 0px;">
 			        <label for="aff_campaign_id" class="col-xs-2 control-label" style="text-align: left;">Campaign:</label>
 			        <div class="col-xs-4" style="margin-top: 10px;">
-			        	<img id="aff_campaign_id_div_loading" src="/202-img/loader-small.gif" style="display: none;" />
+			        	<img id="aff_campaign_id_div_loading" src="/img/loader-small.gif" style="display: none;" />
 						<div id="aff_campaign_id_div">
 							<select class="form-control input-sm" id="aff_campaign_id" disabled="">
 			                	<option>--</option>

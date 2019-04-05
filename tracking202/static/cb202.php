@@ -1,7 +1,7 @@
 <?php
 
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/connect.php');
-include_once(substr(dirname( __FILE__ ), 0,-19) . '/202-config/class-dataengine-slim.php');
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/connect.php');
+include_once(substr(dirname( __FILE__ ), 0,-19) . '/config/class-dataengine-slim.php');
 
 $mysql['user_id'] = 1;
 
