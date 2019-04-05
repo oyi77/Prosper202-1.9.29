@@ -119,7 +119,7 @@ if (!$success) {
 
 	info_top(); ?>
 	<div class="main col-xs-7 install">
-	<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+	<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 	<h6>Welcome</h6>
 	<small>Welcome to the five minute Prosper202 installation process! You may want to browse the <a href="http://prosper202.com/apps/docs/">ReadMe documentation</a> at your leisure. Otherwise, just fill in the information below and you'll be on your way to using the most powerful internet marketing applications in the world.</small>
 
@@ -210,7 +210,7 @@ if ($success) {
 	
 	info_top(); ?>
 	<div class="main col-xs-7 install">
-	<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+	<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 		<h6>Success!</h6>
 		<small>Prosper202 has been installed. Now you can <a href="<?php echo get_absolute_url();?>login.php">log in</a> with your <strong>username</strong> <code><?php echo $html['user_name']; ?></code> and <strong>password</strong> <code><?php echo $html['user_pass']; ?></code>.</small><br></br>
 		<div class="row" style="margin-bottom: 10px;">

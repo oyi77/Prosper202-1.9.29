@@ -326,7 +326,7 @@ template_top('Text Ads Setup',NULL,NULL,NULL);  ?>
 		        <div class="form-group <?php if($error['aff_campaign_id']) echo "has-error";?>" style="margin-bottom: 0px;">
 		        	<label for="aff_network_id" class="col-xs-4 control-label" style="text-align: left;">Category:</label>
 		        	<div class="col-xs-6" style="margin-top: 10px;">
-		        		<img id="aff_network_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
+		        		<img id="aff_network_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"/>
 	                	<div id="aff_network_id_div"></div>
 		        	</div>
 		        </div>
@@ -334,7 +334,7 @@ template_top('Text Ads Setup',NULL,NULL,NULL);  ?>
 		        <div id="aff-campaign-group" class="form-group <?php if($error['aff_campaign_id']) echo "has-error";?>" style="margin-bottom: 0px;">
 		        	<label for="aff_campaign_id" class="col-xs-4 control-label" style="text-align: left;">Campaign:</label>
 		        	<div class="col-xs-6" style="margin-top: 10px;">
-		        		<img id="aff_campaign_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display: none;"/>
+		        		<img id="aff_campaign_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" style="display: none;"/>
 	                    <div id="aff_campaign_id_div">
 	                    	<select class="form-control input-sm" id="aff_campaign_id" disabled="">
 	                    		<option>--</option>
@@ -348,7 +348,7 @@ template_top('Text Ads Setup',NULL,NULL,NULL);  ?>
 		        <div class="form-group <?php if($error['landing_page_id']) echo "has-error";?>" style="margin-bottom: 0px;">
 		        	<label for="landing_page_id" class="col-xs-4 control-label" style="text-align: left;">Landing Page:</label>
 		        	<div class="col-xs-6" style="margin-top: 10px;">
-		        		<img id="landing_page_div_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
+		        		<img id="landing_page_div_loading" class="loading" src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"/>
 						<div id="landing_page_div"></div>
 		        	</div>
 		        </div>

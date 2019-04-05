@@ -407,7 +407,7 @@ function CronJobLastExecution($datetime) {
 <div class="row account">
 	<div class="col-xs-12">
 		<h6>MaxMind ISP/Carrier Lookup</h6>
-		<span class="infotext"><span><a href="http://click202.com/tracking202/redirect/dl.php?t202id=9159015&t202kw=p202setup" target="_blank"><img src="<?php echo get_absolute_url();?>img/maxmind_logo-202.png"></a></span><br>To turn on ISP/Carrier lookup feature, you need
+		<span class="infotext"><span><a href="http://click202.com/tracking202/redirect/dl.php?t202id=9159015&t202kw=p202setup" target="_blank"><img src="<?php echo get_absolute_url();?>assets/img/maxmind_logo-202.png"></a></span><br>To turn on ISP/Carrier lookup feature, you need
 			to <strong><a href="http://click202.com/tracking202/redirect/dl.php?t202id=9159015&t202kw=p202setup" target="_blank">buy MaxMind ISP database</a></strong> and upload (GeoIPISP.dat file) to <code><?php echo getTrackingDomain(). get_absolute_url().'config/geo/';?></code>
 			folder.<br />(Settings will take place after 5 minutes in live
 			traffic)

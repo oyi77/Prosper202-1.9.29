@@ -223,7 +223,7 @@ template_top('API Integrations',NULL,NULL,NULL);
 	<div class="col-xs-12">
 		<div class="row">
 			<div class="col-xs-6">
-				<h6><span><img src="<?php echo get_absolute_url();?>img/icons/integrations/dni.jpg"></span> Direct Network Integration <?php showHelp("dni"); ?></h6>
+				<h6><span><img src="<?php echo get_absolute_url();?>assets/img/icons/integrations/dni.jpg"></span> Direct Network Integration <?php showHelp("dni"); ?></h6>
 			</div>
 			<div class="col-xs-6">
 			<?php if($error['dni_network']) { ?>
@@ -276,7 +276,7 @@ template_top('API Integrations',NULL,NULL,NULL);
 		        			<td> <img src="<?php echo $dni_row['favIcon']; ?>" width=16>&nbsp;&nbsp;<?php echo $dni_row['name']." (".$dni_row['type'].")";?><span class="fui-info-circle" style="font-size: 12px; margin: -25px 0px 0px 5px;" data-toggle="tooltip" title="" data-original-title="<?php echo $dni_row['shortDescription']; ?>"></span><br>
 		        			<?php if ($dni_row['processed'] == false) { ?>
 		        			<div id="network-<?php echo $dni_row['id'];?>">
-		        				<span style='font-size:10px'>processing... <img src="<?php echo get_absolute_url();?>img/loader-small.gif"></span>
+		        				<span style='font-size:10px'>processing... <img src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"></span>
 		        				<div class="progress" style="margin: 0px 5px;">
 								  <div id="<?php echo $dni_row['id'];?>" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%; color:#34495E">
 								    0.00%
@@ -333,7 +333,7 @@ template_top('API Integrations',NULL,NULL,NULL);
 	<div class="col-xs-12">
 		<div class="row">
 			<div class="col-xs-6">
-				<h6><span><img src="<?php echo get_absolute_url();?>img/icons/integrations/clickbank.png"></span> ClickBank Sales Notification <?php showHelp("clickbank"); ?></h6>
+				<h6><span><img src="<?php echo get_absolute_url();?>assets/img/icons/integrations/clickbank.png"></span> ClickBank Sales Notification <?php showHelp("clickbank"); ?></h6>
 			</div>
 			<div class="col-xs-6">
 			<?php if($change_cb_key) { ?>
@@ -437,7 +437,7 @@ if (extension_loaded('mcrypt')) {
 	<div class="col-xs-12">
 		<div class="row">
 			<div class="col-xs-4">
-				<h6><span><img src="<?php echo get_absolute_url();?>img/icons/integrations/slack.png"></span> Slack Integration <?php showHelp("slack"); ?></h6>
+				<h6><span><img src="<?php echo get_absolute_url();?>assets/img/icons/integrations/slack.png"></span> Slack Integration <?php showHelp("slack"); ?></h6>
 			</div>
 			<div class="col-xs-8">
 			<?php if($change_user_slack_incoming_webhook) { ?>

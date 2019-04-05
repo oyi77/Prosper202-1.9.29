@@ -217,7 +217,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 								<div class="form-group">
 									<img id="ppc_network_id_div_loading" class="loading"
 										style="display: none;"
-										src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+										src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 									<div style="margin-left: 2px;" id="ppc_network_id_div"></div>
 								</div>
 
@@ -250,7 +250,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 								<div class="form-group">
 									<img id="aff_network_id_div_loading" class="loading"
 										style="display: none;"
-										src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+										src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 									<div id="aff_network_id_div"></div>
 								</div>
 
@@ -296,14 +296,14 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 									<div class="form-group">
 										<img id="text_ad_id_div_loading" class="loading"
 											style="display: none;"
-											src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+											src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 										<div id="text_ad_id_div" style="margin-left: 69px;"></div>
 									</div>
 
 									<div class="form-group">
 										<img id="ad_preview_div_loading" class="loading"
 											style="display: none;"
-											src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+											src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 										<div id="ad_preview_div"
 											style="position: absolute; top: -12px; font-size: 10px;"></div>
 									</div>
@@ -316,7 +316,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 											<div class="form-group">
 												<img id="device_id_div_loading" class="loading"
 													style="right: 0px; left: 5px;"
-													src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+													src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 												<div id="device_id_div" style="top: -12px; font-size: 10px;">
 													<select class="form-control input-sm" name="device_id"
 														id="device_id">
@@ -331,7 +331,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 											<div class="form-group">
 												<img id="country_id_div_loading" class="loading"
 													style="right: 0px; left: 5px;"
-													src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+													src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 												<div id="country_id_div"
 													style="top: -12px; font-size: 10px;">
 													<select class="form-control input-sm" name="country_id"
@@ -350,7 +350,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 									<div class="form-group">
 										<img id="method_of_promotion_div_loading" class="loading"
 											style="display: none;"
-											src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+											src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 										<div id="method_of_promotion_div" style="margin-left: 9px;"></div>
 									</div>
 								</div>
@@ -362,7 +362,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 											<div class="form-group">
 												<img id="browser_id_div_loading" class="loading"
 													style="right: 0px; left: 5px;"
-													src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+													src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 												<div id="browser_id_div"
 													style="top: -12px; font-size: 10px;">
 													<select class="form-control input-sm" name="browser_id"
@@ -377,7 +377,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 											<div class="form-group">
 												<img id="region_id_div_loading" class="loading"
 													style="right: 0px; left: 5px;"
-													src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+													src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 												<div id="region_id_div" style="top: -12px; font-size: 10px;">
 													<select class="form-control input-sm" name="region_id"
 														id="region_id">
@@ -395,7 +395,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 									<div class="form-group">
 										<img id="landing_page_div_loading" class="loading"
 											style="display: none;"
-											src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+											src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 										<div id="landing_page_div" style="margin-left: 45px;"></div>
 									</div>
 								</div>
@@ -407,7 +407,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 											<div class="form-group">
 												<img id="platform_id_div_loading" class="loading"
 													style="right: 0px; left: 5px;"
-													src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+													src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 												<div id="platform_id_div"
 													style="top: -12px; font-size: 10px;">
 													<select class="form-control input-sm" name="platform_id"
@@ -422,7 +422,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 											<div class="form-group">
 												<img id="isp_id_div_loading" class="loading"
 													style="right: 0px; left: 5px;"
-													src="<?php echo get_absolute_url();?>img/loader-small.gif" />
+													src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" />
 												<div id="isp_id_div" style="top: -12px; font-size: 10px;">
 													<select class="form-control input-sm" name="isp_id"
 														id="isp_id">
@@ -610,7 +610,7 @@ function display_calendar($page, $show_time, $show_adv, $show_bottom, $show_limi
 		<div id="m-content">
 			<div class="loading-stats">
 				<span class="infotext">Loading stats...</span> <img
-					src="<?php echo get_absolute_url();?>img/loader-small.gif">
+					src="<?php echo get_absolute_url();?>assets/img/loader-small.gif">
 			</div>
 		</div>
 	</div>

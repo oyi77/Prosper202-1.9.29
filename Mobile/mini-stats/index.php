@@ -38,9 +38,9 @@ GA_googleFetchAds();
 <!-- Loading Bootstrap -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 <!-- Loading Flat UI -->
-<link href="<?php echo get_absolute_url();?>css/css/flat-ui-pro.min.css" rel="stylesheet">
+<link href="<?php echo get_absolute_url();?>assets/css/css/flat-ui-pro.min.css" rel="stylesheet">
 <!-- Loading Custom CSS -->
-<link href="<?php echo get_absolute_url();?>css/custom.min.css" rel="stylesheet">
+<link href="<?php echo get_absolute_url();?>assets/css/custom.min.css" rel="stylesheet">
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -50,7 +50,7 @@ GA_googleFetchAds();
 <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 1);" id="ministats" class="ministats">
 	<div class="container" style="width: 100%;">
 	<div class="main_wrapper">
-		<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+		<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 		<div class="main">
 			<div class="row">
 	  		<div class="col-xs-12">

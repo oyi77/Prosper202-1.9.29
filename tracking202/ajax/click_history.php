@@ -100,7 +100,7 @@ LEFT JOIN 202_site_domains as 2credird ON (2credird.site_domain_id = 2credir.sit
 			<span class="infotext"><?php printf('<div class="results">Results <b>%s - %s</b> of <b>%s</b></div>',$html['from'],$html['to'],$html['rows']);  ?></span>
 		</div>
 		<div class="col-xs-6 text-right" style="top: -10px;">
-			<img style="margin-bottom:2px;" src="<?php echo get_absolute_url();?>img/icons/16x16/page_white_excel.png"/>
+			<img style="margin-bottom:2px;" src="<?php echo get_absolute_url();?>assets/img/icons/16x16/page_white_excel.png"/>
 			<a style="font-size:12px;" target="_new" href="<?php echo get_absolute_url();?>tracking202/visitors/download/">
 				<strong>Download to excel</strong>
 			</a>
@@ -260,15 +260,15 @@ LEFT JOIN 202_site_domains as 2credird ON (2credird.site_domain_id = 2credir.sit
 				<td id="<?php echo $html['click_id']; ?>"><?php printf('%s', $html['click_id']); ?></td>
 				<td style="text-align:left; padding-left:10px;"><?php echo $html['click_time']; ?></td>
 				<td class="device_info"><?php echo $html['device_type']; ?></td>
-				<td class="geo"><span data-toggle="tooltip" <?php echo 'title="'.$html['country_name'].' ('.$html['country_code'].'), '.$html['city_name'].' ('.$html['region_name'].')"';?>><img src="<?php echo get_absolute_url();?>img/flags/<?php echo strtolower($html['country_code']);?>.png"></span></td>
+				<td class="geo"><span data-toggle="tooltip" <?php echo 'title="'.$html['country_name'].' ('.$html['country_code'].'), '.$html['city_name'].' ('.$html['region_name'].')"';?>><img src="<?php echo get_absolute_url();?>assets/img/flags/<?php echo strtolower($html['country_code']);?>.png"></span></td>
 				<td class="isp"><?php if($html['isp_name']) echo $html['isp_name']; else echo "-"?></td>
 				<td class="filter">
 					<?php if ($click_row['click_filtered'] == '1') { ?>
-						  <img style="margin-right: auto;" src="<?php echo get_absolute_url();?>img/icons/16x16/delete.png" alt="Filtered Out Click" title="filtered out click"/> 
+						  <img style="margin-right: auto;" src="<?php echo get_absolute_url();?>assets/img/icons/16x16/delete.png" alt="Filtered Out Click" title="filtered out click"/> 
 					<?php } elseif ($click_row['click_lead'] == '1') { ?>
-						  <img style="margin-right: auto;" src="<?php echo get_absolute_url();?>img/icons/16x16/money_dollar.png" alt="Converted Click" title="converted click" width="16px" height="16px"/> 
+						  <img style="margin-right: auto;" src="<?php echo get_absolute_url();?>assets/img/icons/16x16/money_dollar.png" alt="Converted Click" title="converted click" width="16px" height="16px"/> 
 					<?php } else { ?>
-						  <img style="margin-right: auto;" src="<?php echo get_absolute_url();?>img/icons/16x16/add.png" alt="Real Click" title="real click"/> 
+						  <img style="margin-right: auto;" src="<?php echo get_absolute_url();?>assets/img/icons/16x16/add.png" alt="Real Click" title="real click"/> 
 					<?php } ?>
 				</td>
 				<td class="ip"><?php echo $html['ip_address']; ?></td>

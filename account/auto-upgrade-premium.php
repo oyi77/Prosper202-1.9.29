@@ -129,7 +129,7 @@ if ($_POST['start_upgrade'] == '1' and getenv("P202_MANAGED_UPDATES") == false) 
 
 if ($missing_api_key == true) { info_top(); ?>
 	<div class="main col-xs-7 install">
-		<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+		<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 		<h6>1-Click Prosper202 Upgrade</h6>
 		<h4><?php echo $_SESSION['premium_p202_details']['headline'];?></h4>
 		<small><?php echo $_SESSION['premium_p202_details']['body'];?></small><br></br>
@@ -188,7 +188,7 @@ if ($missing_api_key == true) { info_top(); ?>
 	} ?>
 
 <div class="main col-xs-7 install">
-	<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+	<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 	<h6>1-Click Prosper202 Upgrade</h6>
 	<h4><?php echo $_SESSION['premium_p202_details']['headline'];?></h4>
 	<small><?php echo $_SESSION['premium_p202_details']['body'];?></small><br></br>

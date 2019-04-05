@@ -40,7 +40,7 @@ switch($step) {
 		info_top();
 ?>
 <div class="main col-xs-7 install">
-<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 	<small>Welcome to Prosper202. Before getting started, we need some information about your database. You will need to know the following items before proceeding.</small>
 	<br></br>
 	<small><ul>
@@ -67,7 +67,7 @@ switch($step) {
 		?>
 	</p>
 	<div class="main col-xs-7 install">
-	<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+	<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 	<small>Enter your database connection details. If you're not sure about these, contact your host</small>
 
 	<form method="post" action="setup-config.php?step=2" class="form-horizontal" role="form" style="margin-top:10px;">

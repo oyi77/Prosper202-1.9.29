@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <meta name="viewport" content = "width=device-width ,  user-scalable=no">
 
  
-<link href="<?php echo get_absolute_url();?>css/toolbar.css" rel="stylesheet" type="text/css"/>
+<link href="<?php echo get_absolute_url();?>assets/css/toolbar.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 		<table cellspacing="0" cellpadding="5">
 			<tr>
-				<td colspan="2" style="text-align: center;" ><a href="http://prosper202.com" target="_blank"><img src="<?php echo get_absolute_url();?>img/prosper202.png"/></a><br/></td>
+				<td colspan="2" style="text-align: center;" ><a href="http://prosper202.com" target="_blank"><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"/></a><br/></td>
 			</tr>
 			<tr>
 				<td>	<form method="post" action="">

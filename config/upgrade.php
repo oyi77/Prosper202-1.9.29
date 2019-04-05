@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	info_top(); ?>	
 	<div class="main col-xs-7">
-	<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+	<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 	<?php if ($error == true) { ?>
 	
 		<h2 style="color: #900;">An error occured</h2>

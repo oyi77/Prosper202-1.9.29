@@ -86,10 +86,10 @@ function info_top() { ?>
 	rel="stylesheet" />
 <!-- Loading Flat UI -->
 <link
-	href="<?php echo get_absolute_url();?>css/css/flat-ui-pro.min.css"
+	href="<?php echo get_absolute_url();?>assets/css/css/flat-ui-pro.min.css"
 	rel="stylesheet" />
 <!-- Loading Custom CSS -->
-<link href="<?php echo get_absolute_url();?>css/custom.min.css"
+<link href="<?php echo get_absolute_url();?>assets/css/custom.min.css"
 	rel="stylesheet" />
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

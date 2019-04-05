@@ -22,23 +22,23 @@ function template_top($title = 'Prosper202 ClickServer') { global $navigation; g
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <meta http-equiv="imagetoolbar" content="no"/>
-<link rel="shortcut icon" href="<?php echo get_absolute_url();?>img/favicon.gif" type="image/ico"/> 
+<link rel="shortcut icon" href="<?php echo get_absolute_url();?>assets/img/favicon.gif" type="image/ico"/> 
 <!-- Loading Bootstrap -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 <!-- Loading Flat UI -->
-<link href="<?php echo get_absolute_url();?>css/css/flat-ui-pro.min.css" rel="stylesheet">
+<link href="<?php echo get_absolute_url();?>assets/css/css/flat-ui-pro.min.css" rel="stylesheet">
 <!-- Loading Font Awesome -->
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- Loading Tags Input CSS -->
-<link href="<?php echo get_absolute_url();?>css/css/bootstrap-tokenfield.min.css" rel="stylesheet">
-<link href="<?php echo get_absolute_url();?>css/css/tokenfield-typeahead.min.css" rel="stylesheet">
+<link href="<?php echo get_absolute_url();?>assets/css/css/bootstrap-tokenfield.min.css" rel="stylesheet">
+<link href="<?php echo get_absolute_url();?>assets/css/css/tokenfield-typeahead.min.css" rel="stylesheet">
 <?php if(($navigation[2] == "setup") AND ($navigation[3] == "aff_campaigns.php")) { ?>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.5/css/jquery.tablesorter.pager.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.5/css/theme.bootstrap.min.css" rel="stylesheet">
 <?php } ?>
-<link href="<?php echo get_absolute_url();?>css/css/select2.css" rel="stylesheet" />
+<link href="<?php echo get_absolute_url();?>assets/css/css/select2.css" rel="stylesheet" />
 <!-- Loading Custom CSS -->
-<link href="<?php echo get_absolute_url();?>css/custom.css" rel="stylesheet">
+<link href="<?php echo get_absolute_url();?>assets/css/custom.css" rel="stylesheet">
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
@@ -47,37 +47,37 @@ function template_top($title = 'Prosper202 ClickServer') { global $navigation; g
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/fileinput.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/radiocheck.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/bootstrap-tokenfield.min.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/typeahead.bundle.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/tablesort.min.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/iio-rum.min.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/list.min.js"></script>	
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/list.fuzzysearch.min.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/fileinput.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/radiocheck.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/bootstrap-tokenfield.min.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/typeahead.bundle.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/tablesort.min.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/iio-rum.min.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/list.min.js"></script>	
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/list.fuzzysearch.min.js"></script>
 <?php switch ($navigation[1]) {
 	
 	case "tracking202": ?>
 	<script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
-	<script type="text/javascript" src="<?php echo get_absolute_url();?>js/chart.theme.js"></script>
+	<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/chart.theme.js"></script>
 	<?php if(($navigation[2] == "setup") AND ($navigation[3] == "aff_campaigns.php")) { ?>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.5/js/jquery.tablesorter.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.5/js/jquery.tablesorter.widgets.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.22.5/js/extras/jquery.tablesorter.pager.min.js"></script>
-	<script type="text/javascript" src="<?php echo get_absolute_url();?>js/dni.search.offers.tablesorter.php?ddlci=<?php echo $_GET['ddlci'];?>"></script>
+	<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/dni.search.offers.tablesorter.php?ddlci=<?php echo $_GET['ddlci'];?>"></script>
 	<?php } ?>
 	<?php break;
 
 case "account": ?>
 <?php if(($navigation[1] == "account") AND !$navigation[2]) { ?>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/home.php"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/home.php"></script>
 <?php } ?>
 
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/account.php"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/account.php"></script>
 <?php break; } ?>
 <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.1-rc.1/js/select2.min.js"></script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/custom.php"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/custom.php"></script>
 
 </head>
 <body>

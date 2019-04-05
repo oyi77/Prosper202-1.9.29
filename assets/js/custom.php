@@ -1343,7 +1343,7 @@ function eraseCookie(name) {
 
 function set_user_prefs(page, offset) {     
 	var element = $('#m-content');
-	element.html('<div class="loading-stats"><span class="infotext">Loading stats...</span> <img src="<?php echo get_absolute_url();?>img/loader-small.gif"></div>');
+	element.html('<div class="loading-stats"><span class="infotext">Loading stats...</span> <img src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"></div>');
 	
 
 	$.post("<?php echo get_absolute_url();?>tracking202/ajax/set_user_prefs.php", $("#user_prefs").serialize(true))

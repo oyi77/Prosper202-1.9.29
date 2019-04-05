@@ -143,7 +143,7 @@ if ($update_needed == true) { info_top();
 	} ?>
 
 <div class="main col-xs-7 install">
-	<center><img src="<?php echo get_absolute_url();?>img/prosper202.png"></center>
+	<center><img src="<?php echo get_absolute_url();?>assets/img/prosper202.png"></center>
 	<h6>1-Click Prosper202 Upgrade</h6>
 	<small>A new Prosper202 version is available. You can auto upgrade your installation or do it manually, by downloading the latest version at <a href="http://my.tracking202.com/clickserver/download/latest/pro" target="_blank">Prosper202.com</a>. Version details are below.</small>
 		<br><br/>

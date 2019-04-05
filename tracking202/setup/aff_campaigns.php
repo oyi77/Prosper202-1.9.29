@@ -571,7 +571,7 @@ template_top ( 'Affiliate Campaigns Setup', NULL, NULL, NULL );
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-      	<h4 class="modal-title"><span id="inProgress" style="display:none"> Processing... <img src="<?php echo get_absolute_url();?>img/loader-small.gif"></span></h4>
+      	<h4 class="modal-title"><span id="inProgress" style="display:none"> Processing... <img src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"></span></h4>
       </div>
       <div class="modal-body">
       	<table id="stats-table" class="tablesorter">
@@ -612,7 +612,7 @@ template_top ( 'Affiliate Campaigns Setup', NULL, NULL, NULL );
 		</table>
       </div>
       <div class="modal-footer">
-        <span id="inProgressFooter" style="display:none"> Processing... <img src="<?php echo get_absolute_url();?>img/loader-small.gif"></span>
+        <span id="inProgressFooter" style="display:none"> Processing... <img src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"></span>
       </div>
     </div>
   </div>
@@ -646,6 +646,6 @@ $(document).ready(function() {
 	var campaignList = new List('campaignList', campaignOptions);
 });
 </script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/jquery.caret.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/jquery.caret.js"></script>
 
 <?php template_bottom(); ?>			

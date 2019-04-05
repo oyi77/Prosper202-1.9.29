@@ -100,7 +100,7 @@ template_top($server_row,'Get Advanced Landing Page Code',NULL,NULL,NULL);  ?>
 			</div>
 
 			<div class="col-xs-6 col-xs-offset-5">
-				<img id="load_aff_campaign_1_loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
+				<img id="load_aff_campaign_1_loading" style="display: none;" src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"/>
 			</div>
 
 			<div id="load_aff_campaign_1"></div>

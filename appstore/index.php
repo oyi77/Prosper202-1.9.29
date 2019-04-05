@@ -65,7 +65,7 @@ template_top('Prosper202 ClickServer App Store');
 
 <div class="row home">
   <div class="col-xs-12">
-  	<h4><img src="<?php echo get_absolute_url();?>img/new/icons/building.svg" alt="ribbon" class="tile-hot-ribbon"> Prosper202 App Store - 1-Click Install Apps & Services</h4>
+  	<h4><img src="<?php echo get_absolute_url();?>assets/img/new/icons/building.svg" alt="ribbon" class="tile-hot-ribbon"> Prosper202 App Store - 1-Click Install Apps & Services</h4>
 	
   </div>
 </div>
@@ -142,7 +142,7 @@ if($data){
         <div class="col-xs-3">
           <div class="tile">
           <?php if($deal['app-status']=="popular"){ ?>
-          <img src="<?php echo get_absolute_url();?>img/new/icons/ribbon.svg" alt="ribbon" class="tile-hot-ribbon">
+          <img src="<?php echo get_absolute_url();?>assets/img/new/icons/ribbon.svg" alt="ribbon" class="tile-hot-ribbon">
           <?php }?>
             <img src="<?php echo $deal['app-img'];?>" class="tile-image big-illustration">
             <h3 class="tile-title"><?php echo $deal['title'];?></h3>

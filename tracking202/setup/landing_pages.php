@@ -294,7 +294,7 @@ template_top($server_row,'Landing Page Setup',NULL,NULL,NULL);  ?>
 		        <div class="form-group <?php if($error['aff_campaign_id']) echo "has-error";?>" style="margin-bottom: 0px;">
 		        	<label for="aff_network_id" class="col-xs-4 control-label" style="text-align: left;">Category:</label>
 		        	<div class="col-xs-6" style="margin-top: 10px;">
-		        		<img id="aff_network_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
+		        		<img id="aff_network_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"/>
 	                	<div id="aff_network_id_div"></div>
 		        	</div>
 		        </div>
@@ -302,7 +302,7 @@ template_top($server_row,'Landing Page Setup',NULL,NULL,NULL);  ?>
 		        <div id="aff-campaign-group" class="form-group <?php if($error['aff_campaign_id']) echo "has-error";?>" style="margin-bottom: 0px;">
 		        	<label for="aff_campaign_id" class="col-xs-4 control-label" style="text-align: left;">Campaign:</label>
 		        	<div class="col-xs-6" style="margin-top: 10px;">
-		        		<img id="aff_campaign_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>img/loader-small.gif" style="display: none;"/>
+		        		<img id="aff_campaign_id_div_loading" class="loading" src="<?php echo get_absolute_url();?>assets/img/loader-small.gif" style="display: none;"/>
 	                    <div id="aff_campaign_id_div">
 	                    	<select class="form-control input-sm" id="aff_campaign_id" disabled="">
 	                    		<option>--</option>
@@ -491,5 +491,5 @@ $(document).ready(function() {
 	var advLps = new List('advLps', advLpOptions);
 });
 </script>
-<script type="text/javascript" src="<?php echo get_absolute_url();?>js/jquery.caret.js"></script>
+<script type="text/javascript" src="<?php echo get_absolute_url();?>assets/js/jquery.caret.js"></script>
 <?php template_bottom($server_row);

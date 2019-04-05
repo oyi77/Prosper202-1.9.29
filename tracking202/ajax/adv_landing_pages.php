@@ -78,7 +78,7 @@ $html['count'] = htmlentities($count, ENT_QUOTES, 'UTF-8');
 </div>
 
 <div class="col-xs-6 col-xs-offset-5">
-	<img id="load_aff_campaign_<?php echo $count; ?>_loading" style="display: none;" src="<?php echo get_absolute_url();?>img/loader-small.gif"/>
+	<img id="load_aff_campaign_<?php echo $count; ?>_loading" style="display: none;" src="<?php echo get_absolute_url();?>assets/img/loader-small.gif"/>
 </div>
 <div id="load_aff_campaign_<?php echo $count; ?>"></div>
 	 
