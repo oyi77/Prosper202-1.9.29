@@ -116,12 +116,12 @@ case "account": ?>
   		</div>
 	</div>
 
-	<?php if ($navigation[1] == 'tracking202') {  include_once(substr(dirname( __FILE__ ), 0,-10) . '/tracking202/_config/top.php'); } ?>
+	<?php if ($navigation[1] == 'tracking202') {  include_once(substr(dirname( __FILE__ ), 0,-6) . '/tracking202/_config/top.php'); } ?>
 	<div class="main" <?php if ($navigation[2] == 'setup') { echo 'style="border-top-left-radius:0px;"'; } ?>>
 
 			<?php if ($navigation[1] == 'tracking202') {
 				if(($navigation[2] == 'setup') or ($navigation[2] == 'overview') or ($navigation[2] == 'analyze') or ($navigation[2] == 'update')){
-					include_once(substr(dirname( __FILE__ ), 0,-10) . '/tracking202/_config/sub-menu.php');
+					include_once(substr(dirname( __FILE__ ), 0,-6) . '/tracking202/_config/sub-menu.php');
 				} 
 			} ?>
 		

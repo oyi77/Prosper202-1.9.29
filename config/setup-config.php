@@ -5,17 +5,17 @@ require_once(dirname( __FILE__ ) . '/functions.php');
 
 
 //check to see if the sample config file exists
-if (!file_exists(substr(dirname( __FILE__ ), 0,-10) . '/config-sample.php')) {
+if (!file_exists('../config-sample.php')) {
 	_die('Sorry, I need a config-sample.php file to work from. Please re-upload this file from your Prosper202 installation.');
 }
 
 
 //lets make a new config file
-$configFile = file(substr(dirname( __FILE__ ), 0,-10).'/config-sample.php');
+$configFile = file(substr(dirname( __FILE__ ), 0,-6).'/config-sample.php');
 
 
 //check to see if the directory is writable
-if ( !is_writable(substr(dirname( __FILE__ ), 0,-10) . '/')) {
+if ( !is_writable(substr(dirname( __FILE__ ), 0,-6) . '/')) {
 	_die("Sorry, I can't write to the directory. You'll have to either change the permissions on your Prosper202 directory or create your config.php manually.");
 }
 
@@ -155,7 +155,7 @@ switch($step) {
 	}
 
 
-	$handle = fopen(substr(dirname( __FILE__ ), 0,-10) . '/config.php', 'w');
+	$handle = fopen(substr(dirname( __FILE__ ), 0,-6) . '/config.php', 'w');
 
 	foreach ($configFile as $line_num => $line) {
 		switch (substr($line,0,7)) {
@@ -179,7 +179,7 @@ switch($step) {
 		}
 	}
 	fclose($handle);
-	chmod(substr(dirname( __FILE__ ), 0,-10) . '/config.php', 0666);
+	chmod(substr(dirname( __FILE__ ), 0,-6) . '/config.php', 0666);
 	
 	_die("<p>All right sparky! You've made it through this part of the installation. Prosper202 can now communicate with your database. If you are ready, go ahead and <a class='btn btn-xs btn-p202' href=\"install.php\">run the install!</a></p>");
 	break;

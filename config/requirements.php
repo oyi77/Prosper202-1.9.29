@@ -82,7 +82,7 @@ info_top(); ?>
 		</tr>
 		<tr>
 			<td>PHP write permissions <br>(required for 1-Click Upgrade)</td>
-			<td><span class="label label-<?php if (!is_writable(substr(dirname( __FILE__ ), 0,-10).'config/temp')) {echo "warning";} else {echo "primary";}?>" style="font-size: 100%;"><?php if(!is_writable(substr(dirname( __FILE__ ), 0,-10).'config/temp')) echo "Not writable"; else echo "Writable"; ?></span></td>
+			<td><span class="label label-<?php if (!is_writable(substr(dirname( __FILE__ ), 0,-6).'config/temp')) {echo "warning";} else {echo "primary";}?>" style="font-size: 100%;"><?php if(!is_writable(substr(dirname( __FILE__ ), 0,-6).'config/temp')) echo "Not writable"; else echo "Writable"; ?></span></td>
 		</tr>
 	</tbody>
 	</table>

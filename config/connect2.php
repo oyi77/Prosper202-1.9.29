@@ -3,7 +3,7 @@ use UAParser\Parser;
 
 $version = '1.9.30';
 
-DEFINE('ROOT_PATH', substr(dirname( __FILE__ ), 0,-10));
+DEFINE('ROOT_PATH', substr(dirname( __FILE__ ), 0,-6));
 DEFINE('CONFIG_PATH', dirname( __FILE__ ));
 @ini_set('auto_detect_line_endings', TRUE);
 @ini_set('register_globals', 0);
@@ -1718,9 +1718,9 @@ function getGeoData($ip)
 
 function getIspData($ip)
 {
-    $isp_file = substr(dirname( __FILE__ ), 0,-10) . "/config/geo/GeoIPISP.dat";
+    $isp_file = substr(dirname( __FILE__ ), 0,-6) . "/config/geo/GeoIPISP.dat";
     if (file_exists($isp_file)) {
-        $giisp = geoip_open(substr(dirname( __FILE__ ), 0,-10) . "/config/geo/GeoIPISP.dat", GEOIP_STANDARD);
+        $giisp = geoip_open(substr(dirname( __FILE__ ), 0,-6) . "/config/geo/GeoIPISP.dat", GEOIP_STANDARD);
         $isp = geoip_org_by_addr($giisp, $ip);
         
         if (! $isp) {
@@ -1905,7 +1905,7 @@ function getSplitTestValue(array $values)
 }
 
 function get_absolute_url() {
-	return substr(substr(dirname( __FILE__ ), 0,-10),strlen(realpath($_SERVER['DOCUMENT_ROOT'])));
+	return substr(substr(dirname( __FILE__ ), 0,-6),strlen(realpath($_SERVER['DOCUMENT_ROOT'])));
 }
 
 function getTrackingDomain() {

@@ -2401,7 +2401,7 @@ aff_network_id=values(aff_network_id)";
         $dbGlobalLink = $db;
        // echo "aaa";
         if (function_exists('curl_version')) { // if curel is installed use the multiget method
-            include_once(substr(dirname( __FILE__ ), 0,-10).'/cronjobs/process_dataengine_job.php');
+            include_once(substr(dirname( __FILE__ ), 0,-6).'/cronjobs/process_dataengine_job.php');
         } 
         else { //loop daily
             $query = "SELECT * FROM 202_dataengine_job WHERE processed = '0'";
@@ -2713,7 +2713,7 @@ class DisplayData
         if ($downloadUrl != '') {
             echo '<div class="row">
                     <div class="col-xs-12 text-right" style="padding-bottom: 10px;">
-                        <img style="margin-bottom:2px;" src="'.get_absolute_url().'img/icons/16x16/page_white_excel.png"/>
+                        <img style="margin-bottom:2px;" src="'.get_absolute_url().'assets/img/icons/16x16/page_white_excel.png"/>
                         <a style="font-size:12px;" target="_new" href="'.get_absolute_url().'tracking202/analyze/'.$downloadUrl.'">
                             <strong>Download to excel</strong>
                         </a>
@@ -2782,13 +2782,13 @@ class DisplayData
  width: 80px;" title="'.$html['ip_address'].'">'.$html['ip_address'].'</div>';
                     break;
                 case 'country':
-                    $featureKey = '<img src="'.get_absolute_url().'img/flags/' . strtolower($html['country_code']) . '.png"> ' . $html['country_name'] . ' (' . $html['country_code'] . ')';
+                    $featureKey = '<img src="'.get_absolute_url().'assets/img/flags/' . strtolower($html['country_code']) . '.png"> ' . $html['country_name'] . ' (' . $html['country_code'] . ')';
                     break;
                 case 'region':
-                    $featureKey = '<img src="'.get_absolute_url().'img/flags/' . strtolower($html['country_code']) . '.png"> ' . $html['region_name'] . ' (' . $html['country_code'] . ')';
+                    $featureKey = '<img src="'.get_absolute_url().'assets/img/flags/' . strtolower($html['country_code']) . '.png"> ' . $html['region_name'] . ' (' . $html['country_code'] . ')';
                     break;
                 case 'city':
-                    $featureKey = '<img src="'.get_absolute_url().'img/flags/' . strtolower($html['country_code']) . '.png"> ' . $html['city_name'] . ' (' . $html['country_code'] . ')';
+                    $featureKey = '<img src="'.get_absolute_url().'assets/img/flags/' . strtolower($html['country_code']) . '.png"> ' . $html['city_name'] . ' (' . $html['country_code'] . ')';
                     break;
                 case 'isp':
                     $featureKey = $html['isp_name'];
@@ -3056,7 +3056,7 @@ class DisplayData
 
         echo '<div class="row">
                     <div class="col-xs-12 text-right" style="padding-bottom: 10px;">
-                        <img style="margin-bottom:2px;" src="'.get_absolute_url().'img/icons/16x16/page_white_excel.png"/>
+                        <img style="margin-bottom:2px;" src="'.get_absolute_url().'assets/img/icons/16x16/page_white_excel.png"/>
                         <a style="font-size:12px;" target="_new" href="'.get_absolute_url().'tracking202/analyze/variables_download.php">
                             <strong>Download to excel</strong>
                         </a>

@@ -27,7 +27,7 @@ class AUTH {
 			if($auth_type=="toolbar")
 				$_SESSION['toolbar'] = 'true';
 				//echo "what";
-			die(include_once(substr(dirname( __FILE__ ), 0,-10). '/access-denied.php'));
+			die(include_once(substr(dirname( __FILE__ ), 0,-6). '/access-denied.php'));
 		}
 		AUTH::set_timezone($_SESSION['user_timezone']);  
 	}

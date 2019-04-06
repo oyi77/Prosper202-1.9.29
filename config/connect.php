@@ -5,7 +5,7 @@ DEFINE('TRACKING202_API_URL', 'http://api.tracking202.com');
 DEFINE('TRACKING202_RSS_URL', 'http://rss.tracking202.com');
 //DEFINE('TRACKING202_ADS_URL', 'http://ads.tracking202.com');
 
-DEFINE('ROOT_PATH', substr(dirname( __FILE__ ), 0,-10));
+DEFINE('ROOT_PATH', substr(dirname( __FILE__ ), 0,-6));
 DEFINE('CONFIG_PATH', dirname( __FILE__ ));
 @ini_set('auto_detect_line_endings', TRUE);
 @ini_set('register_globals', 0);

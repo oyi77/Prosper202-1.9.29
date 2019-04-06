@@ -3,13 +3,14 @@ include_once(dirname( __FILE__ ) . '/functions-upgrade.php');
 //our own die, that will display the them around the error message
 
 function get_absolute_url() {
-	return substr(substr(dirname( __FILE__ ), 0,-10),strlen(realpath($_SERVER['DOCUMENT_ROOT'])));
-}
+	$absolutepath = substr(substr(dirname(__FILE__), 0, - 6), strlen(realpath($_SERVER['DOCUMENT_ROOT'])));
+    $absolutepath = str_replace('\\', '/', $absolutepath);
+    return $absolutepath;}
 
 function _die($message) { 
 
 	info_top();
-	echo '<div class="main col-xs-7"><center><img src="'.get_absolute_url().'img/prosper202.png"></center>';
+	echo '<div class="main col-xs-7"><center><img src="'.get_absolute_url().'assets/img/prosper202.png"></center>';
 	echo $message;
 	echo '</div>';
 	info_bottom();
@@ -224,9 +225,9 @@ function update_needed () {
 										    	$thisFileName = zip_entry_name($zip_entry);
 
 										    	if (substr($thisFileName,-1,1) == '/') {
-										    		if (is_dir(substr(dirname( __FILE__ ), 0,-10). '/'.$thisFileName)) {
+										    		if (is_dir(substr(dirname( __FILE__ ), 0,-6). '/'.$thisFileName)) {
 										    		} else {
-											    		if(@mkdir(substr(dirname( __FILE__ ), 0,-10). '/'.$thisFileName, 0755, true)) {
+											    		if(@mkdir(substr(dirname( __FILE__ ), 0,-6). '/'.$thisFileName, 0755, true)) {
 											    		} else {
 											    		}
 											    	}
@@ -235,7 +236,7 @@ function update_needed () {
 										    		$contents = zip_entry_read($zip_entry, zip_entry_filesize($zip_entry));
 										    		$file_ext = array_pop(explode(".", $thisFileName));
 
-											    	if($updateThis = @fopen(substr(dirname( __FILE__ ), 0,-10).'/'.$thisFileName, 'wb')) {
+											    	if($updateThis = @fopen(substr(dirname( __FILE__ ), 0,-6).'/'.$thisFileName, 'wb')) {
 											    		fwrite($updateThis, $contents);
 						                            	fclose($updateThis);
 						                            	unset($contents);	                      

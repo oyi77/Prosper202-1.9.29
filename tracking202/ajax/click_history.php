@@ -235,9 +235,9 @@ LEFT JOIN 202_site_domains as 2credird ON (2credird.site_domain_id = 2credir.sit
 		$ppc_network_icon = pcc_network_icon($click_row['ppc_network_name'],$click_row['ppc_account_name'],$html['referer_host']); 
         
         if (!$click_row['type_name']) {
-            $html['device_type'] = '<span id="device-tooltip"><span data-toggle="tooltip" title="Browser: '.$html['browser_name'].'<br/> Platform: '.$html['platform_name'].' <br/>Device: '.$html['device_name'].'"><img title="'.$click_row['type_name'].'" src="'.get_absolute_url().'img/icons/platforms/other.png/></span></span>';
+            $html['device_type'] = '<span id="device-tooltip"><span data-toggle="tooltip" title="Browser: '.$html['browser_name'].'<br/> Platform: '.$html['platform_name'].' <br/>Device: '.$html['device_name'].'"><img title="'.$click_row['type_name'].'" src="'.get_absolute_url().'assets/img/icons/platforms/other.png/></span></span>';
         } else {
-        	$html['device_type'] = '<span id="device-tooltip"><span data-toggle="tooltip" title="Browser: '.$html['browser_name'].'<br/> Platform: '.$html['platform_name'].' <br/>Device: '.$html['device_name'].'"><img title="'.$click_row['type_name'].'" src="'.get_absolute_url().'img/icons/platforms/'.$click_row['type_name'].'.png"/></span></span> <img src="'.get_absolute_url().'img/icons/browsers/'.getBrowserIcon($html['browser_name']).'.png">';
+        	$html['device_type'] = '<span id="device-tooltip"><span data-toggle="tooltip" title="Browser: '.$html['browser_name'].'<br/> Platform: '.$html['platform_name'].' <br/>Device: '.$html['device_name'].'"><img title="'.$click_row['type_name'].'" src="'.get_absolute_url().'assets/img/icons/platforms/'.$click_row['type_name'].'.png"/></span></span> <img src="'.get_absolute_url().'assets/img/icons/browsers/'.getBrowserIcon($html['browser_name']).'.png">';
         }
 
         if (!$html['country_code']) {
