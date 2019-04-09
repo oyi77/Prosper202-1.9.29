@@ -8,5 +8,5 @@ I've made few changes.
 * Removed Redirect to auto-upgrade page
 * Removed most of advertising
 * Added links to tutorials
-
-[Prosper202 Installation service is offered here](https://vpsfix.com/product/install-prosperservice/)
+* Template or Theme for Dashboard
+* Notification if there are new Registers
