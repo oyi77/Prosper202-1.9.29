@@ -3,19 +3,9 @@ header('Content-type: application/javascript');
 header('Cache-Control: no-cache, no-store, max-age=0, must-revalidate');
 header('Expires: Sun, 03 Feb 2008 05:00:00 GMT');
 header("Pragma: no-cache");
-include_once(substr(dirname( __FILE__ ), 0,-10) . '/config/functions.php');
+include_once(substr(dirname( __FILE__ ), 0,-9) . '/config/functions.php');
 ?>
 $(document).ready(function() {
-
-	$("#get-logs").click(function() {
-		var element = $("#logs_table");
-		element.css("opacity", "0.5");
-		$.post("<?php echo get_absolute_url();?>account/ajax/conversion_logs.php", $('#logs_from').serialize(true))
-		  .done(function(data) {
-		  	element.css("opacity", "1");
-		  	element.html(data);
-		});
-	});
 
 	//Search preferences datepicker
 	$('#preferences-wrapper .datepicker input:text').datepicker({
@@ -35,7 +25,7 @@ $(document).ready(function() {
 	});
 
 	$('#cb_status').click(function(){
-    	$.post("<?php echo get_absolute_url();?>account/api-integrations.php/?cb_status=1", function(data) {
+    	$.post("<?php echo get_absolute_url();?>account/api-integrations.php?cb_status=1", function(data) {
 			$( "#cb_verified" ).hide().html(data).fadeIn("slow");
 		});
 	});

@@ -18,15 +18,7 @@ $(document).ready(function() {
 
 	var select_id = 0;
 
-	//P202 update check
-	$.ajax({
-		url: "/account/ajax/check-for-update.php",
-	})
-	.done(function() {
-		$.get("/account/ajax/update-needed.php", function(data) {
-		  	$("#update_needed").html(data);
-		});
-	});
+
 
 	$(":radio[name=autocron]").on("change.radiocheck", function () {
 		var autocron = $(this).val();
@@ -990,7 +982,7 @@ function load_platform_id(platform_id){
 function generate_simple_lp_tracking_links() {
 	var element = $("#tracking-links");
 
-	var spinner_html = '<center><img id="get_code_loading" src="/img/loader-small.gif"/></center>'
+	var spinner_html = '<center><img id="get_code_loading" src="/assets/img/loader-small.gif"/></center>'
 	element.css("opacity", "0.5");
 	element.html(spinner_html);
 
@@ -1026,7 +1018,7 @@ function load_new_aff_campaign() {
 //Generate advanced landing page trackin links
 function generate_adv_lp_tracking_links() {
 	var element = $("#tracking-links");
-	var spinner_html = '<center><img id="get_code_loading" src="/img/loader-small.gif"/></center>'
+	var spinner_html = '<center><img id="get_code_loading" src="/assets/img/loader-small.gif"/></center>'
 	element.css("opacity", "0.5");
 	element.html(spinner_html);
 	$.post("/tracking202/ajax/get_adv_landing_code.php", $("#tracking_form").serialize(true))
@@ -1133,7 +1125,7 @@ function tempLoadMethodOfPromotion(select) {
 //Get Links function
 function getTrackingLinks() { 
   	var element = $("#tracking-links");
-	var spinner_html = '<center><img id="get_code_loading" src="/img/loader-small.gif"/></center>'
+	var spinner_html = '<center><img id="get_code_loading" src="/assets/img/loader-small.gif"/></center>'
 	element.css("opacity", "0.5");
 	element.html(spinner_html);
 
@@ -1234,7 +1226,7 @@ function eraseCookie(name) {
 
 function set_user_prefs(page, offset) {     
 	var element = $('#m-content');
-	element.html('<div class="loading-stats"><span class="infotext">Loading stats...</span> <img src="/img/loader-small.gif"></div>');
+	element.html('<div class="loading-stats"><span class="infotext">Loading stats...</span> <img src="/assets/img/loader-small.gif"></div>');
 	
 
 	$.post("/tracking202/ajax/set_user_prefs.php", $("#user_prefs").serialize(true))
@@ -1359,7 +1351,7 @@ function autocomplete_names(selector, type){
 	var elt = $('#' + selector);
 
 	var tags = new Bloodhound({
-	  remote: 'http://my.tracking202.com/api/v2/'+ type +'/%QUERY',
+	  remote: 'https://my.tracking202.com/api/v2/'+ type +'/%QUERY',
 	  datumTokenizer: function(d) { 
 	      return Bloodhound.tokenizers.whitespace(d.val); 
 	  },

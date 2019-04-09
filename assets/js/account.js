@@ -28,7 +28,7 @@ $(document).ready(function() {
 	});
 
 	$('#cb_status').click(function(){
-    	$.post("/account/api-integrations.php/?cb_status=1", function(data) {
+    	$.post("/account/api-integrations.php?cb_status=1", function(data) {
 			$( "#cb_verified" ).hide().html(data).fadeIn("slow");
 		});
 	});

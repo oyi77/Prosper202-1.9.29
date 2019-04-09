@@ -1,6 +1,6 @@
 $(function() {
     var tablesorterOptions = {
-            theme : 'bootstrap',
+            theme : 'metro-dark',
             cssChildRow : "tablesorter-childRow",
             widthFixed: true,
             headerTemplate : '{content} {icon}',
@@ -48,7 +48,7 @@ $(function() {
               $('table.tablesorter').find('tbody').html(rows);
               $('span#inProgress').hide();
               $('span#inProgressFooter').hide();
-              $('h4.modal-title').html(network+'<span id="inProgress" style="display:none"> Processing... <img src="/img/loader-small.gif"></span>');
+              $('h4.modal-title').html(network+'<span id="inProgress" style="display:none"> Processing... <img src="/assets/img/loader-small.gif"></span>');
               $('table.tablesorter').css('opacity', '1');
               $('[data-toggle="tooltip"]').tooltip();
               return [total];
@@ -161,7 +161,7 @@ $(function() {
 
   $('#dniSearchOffersModal').on('hidden.bs.modal', function (e) {
     $('table.tablesorter').trigger("destroy", [false, false]);
-    $('h4.modal-title').html('<span id="inProgress" style="display:none"> Processing... <img src="/img/loader-small.gif"></span>');
+    $('h4.modal-title').html('<span id="inProgress" style="display:none"> Processing... <img src="/assets/img/loader-small.gif"></span>');
     $('table.tablesorter tbody').html('');
   });
 });

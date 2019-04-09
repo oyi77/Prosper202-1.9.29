@@ -1,5 +1,4 @@
 <?php 
-var_dump(substr(dirname( __FILE__ ), 0,-21));
 include_once(substr(dirname( __FILE__ ), 0,-21) . '/config/connect.php'); 
 
 AUTH::require_user();

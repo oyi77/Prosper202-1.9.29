@@ -30,9 +30,9 @@ if ( !file_exists( dirname( __FILE__ ) . '/config.php') ) {
 			header('location: '.get_absolute_url().'config/upgrade.php');
 			
 		} else {
-			include('landing.php');
+			//include('landing.php');
 			//include('router.php');
-			//header('location: '.get_absolute_url().'login.php');
+			header('location: '.get_absolute_url().'login.php');
 		
 		}
 	}

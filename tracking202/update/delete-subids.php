@@ -102,5 +102,5 @@ template_top('Delete Subids',NULL,NULL,NULL); ?>
 		</form>
 	</div>
 </div>
-<script src="/js/flatui-fileinput.js"></script>
+<script src="/assets/js/flatui-fileinput.js"></script>
 <?php template_bottom();

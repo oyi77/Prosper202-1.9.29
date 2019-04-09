@@ -3,12 +3,12 @@ header('Content-type: application/javascript');
 header('Cache-Control: no-cache, no-store, max-age=0, must-revalidate');
 header('Expires: Sun, 03 Feb 2008 05:00:00 GMT');
 header("Pragma: no-cache");
-include_once(substr(dirname( __FILE__ ), 0,-10) . '/config/functions.php');
+include_once(substr(dirname( __FILE__ ), 0,-9) . '/config/functions.php');
 ?>
 
 $(function() {
     tablesorterOptions = {
-            theme : 'bootstrap',
+            theme : 'metro-dark',
             cssChildRow : "tablesorter-childRow",
             widthFixed: true,
             headerTemplate : '{content} {icon}',
