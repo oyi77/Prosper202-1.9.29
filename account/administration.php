@@ -1,6 +1,6 @@
 <?php 
-include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/connect.php');
-include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/functions-tracking202.php');
+include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/connect.php');
+include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/functions-tracking202.php');
 
 AUTH::require_user();
 
@@ -89,7 +89,7 @@ if (isset($_POST['autocron'])) {
 if (isset($_POST['maxmind'])) {
 
 	if($_POST['maxmind'] == "true") {
-		if (file_exists(substr(dirname( __FILE__ ), 0,-12) . '/config/geo/GeoIPISP.dat')) {
+		if (file_exists(substr(dirname( __FILE__ ), 0,-8) . '/config/geo/GeoIPISP.dat')) {
 			$mysql['user_id'] = $db->real_escape_string($_SESSION['user_id']);
 			$sql = "UPDATE 202_users_pref SET maxmind_isp='1' WHERE user_id='".$mysql['user_id']."'";
 			$result = _mysqli_query($sql);

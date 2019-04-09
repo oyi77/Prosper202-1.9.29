@@ -1,7 +1,7 @@
 <?php
 
 
-include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/connect.php');
+include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/connect.php');
 
 AUTH::require_user();
 $user_data = get_user_data_feedback($_SESSION['user_id']);

@@ -185,7 +185,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	info_top(); ?>
 	<div class="row">
 	<div class="main col-xs-4">
-	  <center><img src="img/prosper202.png"></center>
+	  <center><img src="<?= 'assets/img/' ?>prosper202.png"></center>
       <form class="form-signin form-horizontal" role="form" method="post" action="">
 	      <div class="form-group <?php if ($error['user']) echo "has-error";?>">
 	      <?php if ($error['user']) { ?>

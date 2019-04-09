@@ -510,7 +510,7 @@ template_top ( 'Affiliate Campaigns Setup', NULL, NULL, NULL );
 						
 						if ($aff_network_row['dni_network_id'] != null) {
 							if ($aff_network_row['processed'] == false) { 
-								$dni_is_live = "<span style='font-size:10px'>processing... <img src='".get_absolute_url()."img/loader-small.gif'></span>";
+								$dni_is_live = "<span style='font-size:10px'>processing... <img src='".get_absolute_url()."<?= 'assets/img/' ?>loader-small.gif'></span>";
 							} else {
 								$dni_is_live = '<a href="#" class="openDniSearchOffersModal" data-dni-id="'.$aff_network_row['dni_network_id'].'">Search Offers</a>';
 								 

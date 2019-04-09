@@ -1,5 +1,5 @@
 <?php
-include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/connect.php');
+include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/connect.php');
 
 AUTH::require_user();
 

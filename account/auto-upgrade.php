@@ -1,9 +1,9 @@
 <?php
 ini_set('memory_limit', '-1');
-include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/connect.php');
-include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/functions-upgrade.php');
-include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/functions-rss.php');
-include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/class-dataengine.php');
+include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/connect.php');
+include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/functions-upgrade.php');
+include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/functions-rss.php');
+include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/class-dataengine.php');
 
 AUTH::require_user();
 
@@ -49,11 +49,11 @@ if ($_POST['start_upgrade'] == '1') {
 			
 			if (temp_exists()) {
 				$log .= "Created /config/temp/ directory.\n";
-				$downloadUpdate = @file_put_contents(substr(dirname( __FILE__ ), 0,-12). '/config/temp/prosper202_'.$latest_version.'.zip', $GetUpdate);
+				$downloadUpdate = @file_put_contents(substr(dirname( __FILE__ ), 0,-8). '/config/temp/prosper202_'.$latest_version.'.zip', $GetUpdate);
 				if ($downloadUpdate) {
 					$log .= "Update downloaded and saved!\n";
 
-					$zip = @zip_open(substr(dirname( __FILE__ ), 0,-12). '/config/temp/prosper202_'.$latest_version.'.zip');
+					$zip = @zip_open(substr(dirname( __FILE__ ), 0,-8). '/config/temp/prosper202_'.$latest_version.'.zip');
 
 						if ($zip)
 						{	
@@ -65,10 +65,10 @@ if ($_POST['start_upgrade'] == '1') {
 						    	$thisFileName = zip_entry_name($zip_entry);
 
 						    	if (substr($thisFileName,-1,1) == '/') {
-						    		if (is_dir(substr(dirname( __FILE__ ), 0,-12). '/'.$thisFileName)) {
+						    		if (is_dir(substr(dirname( __FILE__ ), 0,-8). '/'.$thisFileName)) {
 						    			$log .= "Directory: /" . $thisFileName . "......updated\n";
 						    		} else {
-							    		if(@mkdir(substr(dirname( __FILE__ ), 0,-12). '/'.$thisFileName, 0755, true)) {
+							    		if(@mkdir(substr(dirname( __FILE__ ), 0,-8). '/'.$thisFileName, 0755, true)) {
 							    			$log .= "Directory: /" . $thisFileName . "......created\n";
 							    		} else {
 							    			$log .= "Can't create /" . $thisFileName . " directory! Operation aborted";
@@ -79,13 +79,13 @@ if ($_POST['start_upgrade'] == '1') {
 						    		$contents = zip_entry_read($zip_entry, zip_entry_filesize($zip_entry));
 						    		$file_ext = array_pop(explode(".", $thisFileName));
 
-						    		if (file_exists(substr(dirname( __FILE__ ), 0,-12).'/'.$thisFileName)) {
+						    		if (file_exists(substr(dirname( __FILE__ ), 0,-8).'/'.$thisFileName)) {
 						    			$status = "updated";
 						    		} else {
 						    			$status = "created";
 						    		}
 
-							    	if($updateThis = @fopen(substr(dirname( __FILE__ ), 0,-12).'/'.$thisFileName, 'wb')) {
+							    	if($updateThis = @fopen(substr(dirname( __FILE__ ), 0,-8).'/'.$thisFileName, 'wb')) {
 							    		fwrite($updateThis, $contents);
 		                            	fclose($updateThis);
 		                            	unset($contents);	                      
@@ -118,7 +118,7 @@ if ($_POST['start_upgrade'] == '1') {
 
 		if ($FilesUpdated == true) {
 
-			include_once(substr(dirname( __FILE__ ), 0,-12) . '/config/functions-upgrade.php');
+			include_once(substr(dirname( __FILE__ ), 0,-8) . '/config/functions-upgrade.php');
 
 			$log .= "-------------------------------------------------------------------------------------\n";
 			$log .= "\nUpgrading database...\n";

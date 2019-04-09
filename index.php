@@ -31,6 +31,7 @@ if ( !file_exists( dirname( __FILE__ ) . '/config.php') ) {
 			
 		} else {
 			include('landing.php');
+			//include('router.php');
 			//header('location: '.get_absolute_url().'login.php');
 		
 		}

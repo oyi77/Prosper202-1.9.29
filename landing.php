@@ -5,19 +5,19 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="icon" href="<?= 'assets/' ?>img/favicon.png" type="image/png">
 	<title>Comodo Games</title>
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
-	<link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>css/bootstrap.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>vendors/linericon/style.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>css/font-awesome.min.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>css/magnific-popup.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>vendors/flaticon/flaticon.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?= 'assets/' ?>css/style.css">
 </head>
 
 <body>
@@ -28,7 +28,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="index.html"><img src="<?= 'assets/' ?>img/logo.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -61,7 +61,7 @@
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="#" class="primary_btn">join us</a></li>
+							<li class="nav-item"><a href="login.php" class="primary_btn">join us</a></li>
 						</ul>
 					</div>
 				</div>
@@ -77,7 +77,7 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="home_left_img">
-							<img class="img-fluid" src="img/banner/home-left.png" alt="">
+							<img class="img-fluid" src="<?= 'assets/' ?>img/banner/home-left.png" alt="">
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -122,7 +122,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="about_us_image_box justify-content-center">
-						<img class="img-fluid w-100" src="img/about_img.png" alt="">
+						<img class="img-fluid w-100" src="<?= 'assets/' ?>img/about_img.png" alt="">
 					</div>
 				</div>
 			</div>
@@ -144,7 +144,7 @@
 			<div class="row text-center">
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="new_games_item">
-						<img src="img/b_map1.png" alt="">
+						<img src="<?= 'assets/' ?>img/b_map1.png" alt="">
 						<div class="upcoming_title">
 							<h3><a href="games.html">Best Ps4 Games</a></h3>
 						</div>
@@ -152,7 +152,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="new_games_item">
-						<img src="img/b_map2.png" alt="">
+						<img src="<?= 'assets/' ?>img/b_map2.png" alt="">
 						<div class="upcoming_title">
 							<h3><a href="games.html">World Dart 2019</a></h3>
 						</div>
@@ -160,7 +160,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="new_games_item">
-						<img src="img/b_map3.png" alt="">
+						<img src="<?= 'assets/' ?>img/b_map3.png" alt="">
 						<div class="upcoming_title">
 							<h3><a href="games.html">New XBox Games</a></h3>
 						</div>
@@ -168,7 +168,7 @@
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="new_games_item">
-						<img src="img/b_map4.png" alt="">
+						<img src="<?= 'assets/' ?>img/b_map4.png" alt="">
 						<div class="upcoming_title">
 							<h3><a href="games.html">Amarican Football</a></h3>
 						</div>
@@ -207,7 +207,7 @@
 						<div class="row recent_update_text">
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="img/recent_up.png" alt="">
+									<img class="img-fluid" src="<?= 'assets/' ?>img/recent_up.png" alt="">
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -225,7 +225,7 @@
 						<div class="row recent_update_text">
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="img/recent_up.png" alt="">
+									<img class="img-fluid" src="<?= 'assets/' ?>img/recent_up.png" alt="">
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -243,7 +243,7 @@
 						<div class="row recent_update_text">
 							<div class="col-lg-6">
 								<div class="chart_img">
-									<img class="img-fluid" src="img/recent_up.png" alt="">
+									<img class="img-fluid" src="<?= 'assets/' ?>img/recent_up.png" alt="">
 								</div>
 							</div>
 							<div class="col-lg-6">
@@ -281,9 +281,9 @@
 						<div class="col-lg-6 col-md-6 col-sm-6">
 							<div class="single-gallery">
 								<div class="overlay"></div>
-								<img class="img-fluid w-100" src="img/gallery_img1.png" alt="">
+								<img class="img-fluid w-100" src="<?= 'assets/' ?>img/gallery_img1.png" alt="">
 								<div class="content">
-									<a class="pop-up-image" href="img/gallery_img1.png">
+									<a class="pop-up-image" href="<?= 'assets/' ?>img/gallery_img1.png">
 										<i class="lnr lnr-eye"></i>
 									</a>
 								</div>
@@ -292,9 +292,9 @@
 						<div class="col-lg-6 col-md-6 col-sm-6">
 							<div class="single-gallery">
 								<div class="overlay"></div>
-								<img class="img-fluid w-100" src="img/gallery_img2.png" alt="">
+								<img class="img-fluid w-100" src="<?= 'assets/' ?>img/gallery_img2.png" alt="">
 								<div class="content">
-									<a class="pop-up-image" href="img/gallery_img2.png">
+									<a class="pop-up-image" href="<?= 'assets/' ?>img/gallery_img2.png">
 										<i class="lnr lnr-eye"></i>
 									</a>
 								</div>
@@ -303,9 +303,9 @@
 						<div class="col-lg-12">
 							<div class="single-gallery">
 								<div class="overlay"></div>
-								<img class="img-fluid w-100" src="img/gallery_img3.png" alt="">
+								<img class="img-fluid w-100" src="<?= 'assets/' ?>img/gallery_img3.png" alt="">
 								<div class="content">
-									<a class="pop-up-image" href="img/gallery_img3.png">
+									<a class="pop-up-image" href="<?= 'assets/' ?>img/gallery_img3.png">
 										<i class="lnr lnr-eye"></i>
 									</a>
 								</div>
@@ -316,9 +316,9 @@
 				<div class="col-lg-4 hidden-md hidden-sm">
 					<div class="single-gallery">
 						<div class="overlay"></div>
-						<img class="img-fluid w-100" src="img/gallery_img4.png" alt="">
+						<img class="img-fluid w-100" src="<?= 'assets/' ?>img/gallery_img4.png" alt="">
 						<div class="content">
-							<a class="pop-up-image" href="img/gallery_img4.png">
+							<a class="pop-up-image" href="<?= 'assets/' ?>img/gallery_img4.png">
 								<i class="lnr lnr-eye"></i>
 							</a>
 						</div>
@@ -335,7 +335,7 @@
 		<div class="container">
 			<div class="testi_slider owl-carousel">
 				<div class="testi_item">
-					<img src="img/quote.png" alt="">
+					<img src="<?= 'assets/' ?>img/quote.png" alt="">
 					<h4>Fanny Spencer</h4>
 					<ul class="list">
 						<li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -353,7 +353,7 @@
 					</div>
 				</div>
 				<div class="testi_item">
-					<img src="img/quote.png" alt="">
+					<img src="<?= 'assets/' ?>img/quote.png" alt="">
 					<h4>Fanny Spencer</h4>
 					<ul class="list">
 						<li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -371,7 +371,7 @@
 					</div>
 				</div>
 				<div class="testi_item">
-					<img src="img/quote.png" alt="">
+					<img src="<?= 'assets/' ?>img/quote.png" alt="">
 					<h4>Fanny Spencer</h4>
 					<ul class="list">
 						<li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -534,7 +534,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="blog_items">
 						<div class="blog_img_box">
-							<img class="img-fluid" src="img/blog_img1.png" alt="">
+							<img class="img-fluid" src="<?= 'assets/' ?>img/blog_img1.png" alt="">
 						</div>
 						<div class="blog_content">
 							<a class="title" href="blog.html">Portable Fashion for women</a>
@@ -551,7 +551,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="blog_items">
 						<div class="blog_img_box">
-							<img class="img-fluid" src="img/blog_img2.png" alt="">
+							<img class="img-fluid" src="<?= 'assets/' ?>img/blog_img2.png" alt="">
 						</div>
 						<div class="blog_content">
 							<a class="title" href="blog.html">Portable Fashion for women</a>
@@ -568,7 +568,7 @@
 				<div class="col-lg-4 hidden-md">
 					<div class="blog_items">
 						<div class="blog_img_box">
-							<img class="img-fluid" src="img/blog_img3.png" alt="">
+							<img class="img-fluid" src="<?= 'assets/' ?>img/blog_img3.png" alt="">
 						</div>
 						<div class="blog_content">
 							<a class="title" href="blog.html">Portable Fashion for women</a>
@@ -703,23 +703,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-	<script src="vendors/isotope/isotope-min.js"></script>
-	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-	<script src="js/jquery.ajaxchimp.min.js"></script>
-	<script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-	<script src="vendors/counter-up/jquery.counterup.min.js"></script>
-	<script src="js/mail-script.js"></script>
+	<script src="<?= 'assets/' ?>js/jquery-3.2.1.min.js"></script>
+	<script src="<?= 'assets/' ?>js/popper.js"></script>
+	<script src="<?= 'assets/' ?>js/bootstrap.min.js"></script>
+	<script src="<?= 'assets/' ?>js/stellar.js"></script>
+	<script src="<?= 'assets/' ?>js/jquery.magnific-popup.min.js"></script>
+	<script src="<?= 'assets/' ?>vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="<?= 'assets/' ?>vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="<?= 'assets/' ?>vendors/isotope/isotope-min.js"></script>
+	<script src="<?= 'assets/' ?>vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="<?= 'assets/' ?>js/jquery.ajaxchimp.min.js"></script>
+	<script src="<?= 'assets/' ?>vendors/counter-up/jquery.waypoints.min.js"></script>
+	<script src="<?= 'assets/' ?>vendors/counter-up/jquery.counterup.min.js"></script>
+	<script src="<?= 'assets/' ?>js/mail-script.js"></script>
 	<!--gmaps Js-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-	<script src="js/gmaps.min.js"></script>
-	<script src="js/theme.js"></script>
+	<script src="<?= 'assets/' ?>js/gmaps.min.js"></script>
+	<script src="<?= 'assets/' ?>js/theme.js"></script>
 </body>
 
 </html>
